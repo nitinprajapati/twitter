@@ -1,0 +1,23 @@
+{
+  "name": "demo-web-app-twitter",
+  "version": "1.0.0",
+  "description": "pull twitter data and represent in line and bar graph",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter",
+    "line",
+    "graph",
+    "bar",
+    "graph",
+    "pull",
+    "data"
+  ],
+  "author": "Nitin Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express-generator": "^4.15.0"
+  }
+}

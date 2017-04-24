@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    div.loading-div(data-ng-class="loading_class")
+        img(src="/images/loading.gif" class="loading-img" data-ng-class="loading_class")
+    nav.navbar.navbar-default
+        div.container-fluid
+            div.navbar-header
+                div.collapse.navbar-collapse
+                    ul.nav.navbar-nav
+                        li.active
+                            a.pointer(ng-click="pull_tweets()") Pull Tweets
+                    form.navbar-form.navbar-left
+                        .form-group
+                            input(type="text" class="form-control" data-ng-model="tweets" placeholder="Search tweets here")
+                            button(type="search" class="btn btn-default" ng-click="search()") Search
+                    form.navbar-form.navbar-left
+                        .form-group
+                            input(type="text" class="form-control" data-ng-model="start_time" placeholder="Tweet start time")
+                            input(type="text" class="form-control" data-ng-model="end_time" placeholder="Tweet end time")
+                            button(type="search" class="btn btn-default" ng-click="tweet_filter()") Search
+                div.table-responsive(ng-class="respose")
+                    table.table.table-striped
+                        tr
+                        th.col-md-8 Tweet
+                        th.col-md-4 Time
+                        tr(ng-repeat="tweet in tweetlist")
+                            td.col-md-8(ng-bind="tweet[0]")
+                            td.col-md-4(ng-bind="tweet[1]")
+                div(data-ng-class="status" class="failure") {{status}}
+

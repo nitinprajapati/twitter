@@ -1,0 +1,14 @@
+doctype html
+html(data-ng-app='erpregistration')
+  head
+    meta(charset="ISO-8859-1")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+  body(ng-controller="registration" class="container-fluid")
+    block content
+    script(src='/javascripts/angular.min.js')
+    script(src='/javascripts/app.js')
+    script(src='/javascripts/jquery-3.2.0.min.js')
+    script(src='/javascripts/bootstrap.min.js')

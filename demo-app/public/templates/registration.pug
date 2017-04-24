@@ -1,0 +1,15 @@
+form(id="registration_form")
+	.row
+		.col-md-6.form-group
+			div(class="col-md-12 form-group" ng-class="$parent.resultClass"){{$parent.status}}
+		.col-md-6.form-group
+		    a(href="/logout")Logout
+	.row
+		.col-md-6.form-group
+		    input(type="text" class="form-control" data-ng-model="$parent.first_name" placeholder="First Name") 
+		.col-md-6.form-group
+		    input(type="text" class="form-control" data-ng-model="$parent.last_name" placeholder="Last Name")
+	.row
+		.col-md-6.form-group
+		    input(type="text" class="form-control" data-ng-model="$parent.email_id" placeholder="Email id")
+   button(type="button" class="btn btn-default" data-ng-click="registration()")Register

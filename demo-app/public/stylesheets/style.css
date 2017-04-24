@@ -1,0 +1,57 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.top-100{
+	top: 100px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (min-width: 768px) {
+	.sidenavbar.nav {
+		float: none;
+	}
+	
+	.sidenavbar.nav > li {
+    	float: none;
+    	display:list-item;
+	}
+}
+
+.success{
+	color : green;
+}
+
+.failure{
+	color : red;
+}
+
+.loading-div{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.loading-img{
+	  position: absolute;
+    top: 12%;
+    left: 40%;
+}
+
+.show{
+	display: block;
+}
+
+.hide{
+	display: none;
+}
+
+.pointer{
+	cursor: pointer;
+}
